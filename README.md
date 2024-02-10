@@ -1,5 +1,5 @@
 # totp-go
-TOTP (Time-based one-time password) for GO according to RFC 6238 (https://datatracker.ietf.org/doc/html/rfc6238).
+TOTP (Time-based one-time password) for GO according to RFC 6238 [https://datatracker.ietf.org/doc/html/rfc6238](https://datatracker.ietf.org/doc/html/rfc6238).
 
 Supports SHA1, SHA256 and SHA512 hashing. Generates 6,8 or 8 digits long passwords. 
 
