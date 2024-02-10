@@ -12,7 +12,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/ironsys/totp-go"
+	"github.com/ironsys-pl/totp-go"
 )
 
 func main() {
@@ -20,6 +20,7 @@ func main() {
     timeStepSize := 30 // 30 seconds, recommended in RFC
     hashAlgo := totp.HashAlgoSha1
     digits := 6
-	pass  := totp.Totp([]byte(secret), time.Now(), timeStepSize, hashAlgo, digits) // produces 6 digit password, different output every 30 seconds
+    // produces 6 digit password, different output every 30 seconds
+    pass  := totp.Totp([]byte(secret), time.Now(), timeStepSize, hashAlgo, digits)
 }
 ```
